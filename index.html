@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $(".fade").fadeIn("slow");
+        });
+    });
+</script>
+
+<body>
+    <style>
+        body {
+            background: #546de5;
+        }
+
+        button {
+            font-size: 28px;
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #e15f41;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 15px;
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+            width: 60%;
+        }
+
+        .fade {
+            font-size: 40px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 40%;
+            background: #e15f41;
+            font-family: "Lucida Console", "Courier New", monospace;
+            padding: 50px 5px;
+            color: #fff;
+            width: 100%;
+            display: none;
+        }
+    </style>
+
+
+    <button>Click here to Read</button>
+    <div class="fade">Can you wait a year and a half for me?...</div>
+
+
+
+
+</body>
+
+</html>
